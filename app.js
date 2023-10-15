@@ -45,9 +45,7 @@ const pintarTareas = () => {
     localStorage.setItem('tareas', JSON.stringify(tareas))
 
     if (Object.values(tareas).length === 0) {
-        listaTareas.innerHTML = `
-        <div class="alert alert-dark text-center">No Hay tareas pendientes</div>
-        `
+        listaTareas.innerHTML = `<div class="alert alert-dark text-center">No Hay tareas pendientes</div>`
         return
     }
     
