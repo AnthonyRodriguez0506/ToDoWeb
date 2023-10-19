@@ -14,7 +14,7 @@
 
 .todo-app {
     width: 100%;
-    max-width: 360px;
+    width: 360px;
     background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -82,7 +82,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50px;
-    background-image: url(src/image/unchecked.png);
+    background-image: url(image/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 10px;
@@ -96,7 +96,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-background-image: url(src/image/checked.png);
+background-image: url(image/checked.png);
 }
 
 ul li span{
