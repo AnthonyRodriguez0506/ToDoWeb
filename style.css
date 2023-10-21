@@ -14,7 +14,7 @@
 
 .todo-app {
     width: 100%;
-    width: 360px;
+    max-width: 360px;
     background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -36,7 +36,7 @@
 
 .row {
     display: flex;
-    width: 300px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background: #edeef0;
@@ -51,13 +51,13 @@ input {
     outline: none;
     background: transparent;
     padding: 12px;
-    font-weight: 14px;
+    font-size: 14px;
 }
 
 button {
     border: none;
     outline: none;
-    width: 300px;
+    width: 100%;
     padding: 16px 18px;
     background: #ff5945;
     color: white;
@@ -115,4 +115,24 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+
+@media (max-width: 768px) {
+    .todo-app {
+        max-width: 300px;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-app {
+        max-width: 250px;
+    }
+
+    input, button {
+        font-size: 10px;
+    }
 }

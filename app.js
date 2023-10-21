@@ -3,7 +3,11 @@ const listContainer = document.getElementById("list-conteiner");
 
 function addTask(){
     if(inputBox.value === ''){
-        alert("Escribe una tarea");
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Debes agregar una tarea',
+          });
     }
     else{
         let li = document.createElement("li");
